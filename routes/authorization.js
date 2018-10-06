@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var request = require('request');
 var URL = require('url').URL;
 
 /* GET users listing. */
@@ -12,7 +11,6 @@ function sendAuthentication(res) {
     let url = new URL('https://slack.com/oauth/authorize');
 
     url.searchParams.append('client_id', process.env.CLIENT_ID);
-    url.searchParams.append('client_secret', process.env.CLIENT_SECRET);
     url.searchParams.append('scope', process.env.SCOPE);
     url.searchParams.append('team', process.env.TEAM);
 
