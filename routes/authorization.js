@@ -18,5 +18,4 @@ router.get('/', (req, res) => {
     sendAuthentication(res);
 });
 
-
 module.exports = router;

@@ -28,5 +28,4 @@ router.get('/', (req, res) => {
     sendAccessToken(res, code);
 });
 
-
 module.exports = router;
