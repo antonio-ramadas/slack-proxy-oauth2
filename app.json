@@ -2,6 +2,6 @@
     "name": "Slack OAuth2 proxy",
     "description": "Simple proxy server to authenticate your apps on Slack (with OAuth2)",
     "repository": "https://github.com/antonio-ramadas/slack-proxy-oauth2",
-    "logo": "https://github.com/antonio-ramadas/slack-proxy-oauth2/raw/master/resources/slack-logo.svg",
+    "logo": "https://github.com/antonio-ramadas/slack-proxy-oauth2/raw/master/resources/slack-logo.png",
     "keywords": ["slack", "proxy", "oauth2"]
 }
