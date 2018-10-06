@@ -1,15 +1,23 @@
 {
-  "name": "slack",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "morgan": "~1.9.0",
-    "request": "^2.88.0"
-  }
+    "name": "slack",
+    "version": "0.1.0",
+    "author": "António Ramadas",
+    "license": "MIT",
+    "scripts": {
+        "start": "node ./bin/www",
+        "lint": "node_modules/.bin/eslint .",
+        "postinstall": "ln -Fs ../../git-hooks/pre-commit.sh .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.9",
+        "express": "~4.16.0",
+        "morgan": "~1.9.0",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.6.1",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.14.0"
+    }
 }
