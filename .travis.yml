@@ -1,5 +1,12 @@
 language: node_js
 node_js:
-- "node"
+- node
 script:
 - npm run lint -s
+deploy:
+    provider: heroku
+    api_key:
+        secure: ZWmqUycr3+nNxamzkuVzudqlEis4EQ/9z9hBsNa4mUWkpD+IW2eRCYcQdZBB/thLXHfb8DW8ocpoPinVzPWS7T1Uqu34FcHDKu3hd/azUzoeAncqJRwkY/CufQsOKWpHxcc52Yn/gEADcE3+E9bIVEtk6PpZQ+vYZ+kTInoYDdLb1P1AVhMb/27TPQ9ix8+prqcRkqCdd4LsI/YKyJaMbIFyQq3qyGRnoNp3JTdL2cuHy/Z6vbT+4ihPjKpn2U0FjTu67/lTkCgIzcMEHekhMhAVqVNjz1rLWmxd8TUJYvA742Y3h6snoTSbrKhdeyZwl1tpsmoQw+fno50VxMxQQ0fsPfmWyxb5W+X8SvPMv3raOIsjRRXV5EscKadYiBPcVxjSxkMw8WERZsg2nSvFjT3/mPN+BU/p0iLJ1dGspqHuPE7hzz/dY66vxc2Z0Fp9BdaaKZiqwFb1urnNAysxMbt97cdAET1Nu8aegrDrGn6wXizpnuz7dyRBeaxT93POWef0LWVUNkROCYlc0c72MYBxOFzYDezxgMFRMd7FbiBgeZYXHjm4WtNv7R3NugNM0vHXHKD5p5vQwc6O8K92KnNKimt2ePHT3JkaZcfkapdb0AzUS58+3cCdgIjx0c/MqkidvO3B0cKkm7cwaQhqOLyP91opN+alVqLBF9GN7Lc=
+    app: slackoauth2
+    on:
+        repo: antonio-ramadas/slackoauth2
