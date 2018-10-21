@@ -2,6 +2,8 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+> Looking for a Spotify Proxy for OAuth2? It is in [another repository](https://github.com/antonio-ramadas/spotify-proxy-oauth2).
+
 Dead simple proxy server to authenticate your apps on Slack. No need to code anything. Just set environment variables and you are good to go!
 
 > If you have problems understanding what is being done here, then have a look to the [Slack OAuth2 documentation](https://api.slack.com/docs/oauth).
